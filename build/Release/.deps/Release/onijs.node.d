@@ -1,0 +1,1 @@
+cmd_Release/onijs.node := ./gyp-mac-tool flock ./Release/linker.lock c++ -shared -Wl,-search_paths_first -mmacosx-version-min=10.5 -arch x86_64 -L./Release -install_name @rpath/onijs.node  -o Release/onijs.node Release/obj.target/onijs/src/main.o -undefined dynamic_lookup -lOpenNI2 -L/Users/jrossitto/code/lib/OpenNI-2.1.0/Redist -Wl,-rpath ./
